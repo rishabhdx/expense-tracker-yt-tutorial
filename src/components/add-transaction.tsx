@@ -33,14 +33,23 @@ const AddTransaction = () => {
         className="flex flex-col gap-4 mt-4"
         action={formSubmitAction}
       >
-        <input type="text" name="text" id="text" placeholder="Enter expense" />
+        <input
+          type="text"
+          name="text"
+          id="text"
+          placeholder="Enter expense"
+          className="p-4 rounded border border-gray-200 dark:border-gray-800 outline-none focus-visible:border-blue-500 focus-visible:dark:border-blue-600 transition-all duration-200 ease-in-out placeholder-gray-500 dark:placeholder-gray-600"
+        />
         <input
           type="number"
           name="amount"
           id="amount"
           placeholder="Enter amount"
+          className="p-4 rounded border border-gray-200 dark:border-gray-800 outline-none focus-visible:border-blue-500 focus-visible:dark:border-blue-600 transition-all duration-200 ease-in-out placeholder-gray-500 dark:placeholder-gray-600"
         />
-        <button>Add Transaction</button>
+        <button className="p-4 rounded font-medium bg-indigo-600 hover:bg-indigo-700 focus-visible::bg-indigo-800 outline-none">
+          Add Transaction
+        </button>
       </form>
     </div>
   );

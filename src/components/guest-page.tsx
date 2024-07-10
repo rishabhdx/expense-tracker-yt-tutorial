@@ -1,4 +1,3 @@
-import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
 const GuestPage = () => {
@@ -9,10 +8,11 @@ const GuestPage = () => {
         This is a simple expense tracker application built with Next.js, Neon,
         Prisma and Clerk.
       </p>
-      <Link href="/sign-in">
-        <Button color="primary" className="font-medium">
-          Sign up to get started
-        </Button>
+      <Link
+        href="/sign-up"
+        className="px-4 py-2 rounded font-medium bg-indigo-600 hover:bg-indigo-700 focus-visible::bg-indigo-800 outline-none"
+      >
+        Sign up to get started
       </Link>
     </div>
   );
